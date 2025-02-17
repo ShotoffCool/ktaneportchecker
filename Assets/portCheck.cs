@@ -323,6 +323,7 @@ public class portCheck : MonoBehaviour {
 				if (RJs == 0)
 				{
                     Solution[0] = true; Solution[4] = true; Solution[5] = true;
+					return;
                 }
 			}
 			if (Serials == 2)
@@ -480,6 +481,7 @@ public class portCheck : MonoBehaviour {
 			else
 			{
                 Solution[3] = true; Solution[5] = true;
+				return;
             }
         }
 		if (Info.GetPortCount() == 0)
@@ -492,6 +494,7 @@ public class portCheck : MonoBehaviour {
 			else
 			{
                 Solution[0] = true; Solution[1] = true; Solution[2] = true; Solution[4] = true; Solution[5] = true;
+				return;
             }
 		}
     }
